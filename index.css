@@ -9,8 +9,13 @@ nav{
     width: 20%;
 }
 
-.navIcon img{
-    height:100%;
+.navIcon a{
+    padding: 22px;
+    display:block;
+    height:35.5px;
+    font-size: 2em;
+    color:white;
+    text-decoration:none;
 }
 
 .navOpt{
@@ -24,11 +29,11 @@ nav{
 
 .navOpt a{
     position:relative;
-    padding: 30px;
+    padding: 30px 4%;
     display:block;
     height:19.5px;
     font-size: 1.2em;
-    color:black;
+    color:white;
     text-decoration:none;
 }
 
@@ -38,7 +43,7 @@ nav{
     width: 100%;
     height: 0.2rem;
     border-radius: 0.1rem;
-    background-color: #18272F;
+    background-color: #FFFFFF;
     bottom: 1rem;
     left: 0;
     transform-origin: left;
@@ -56,6 +61,8 @@ nav{
 
 .mainContent{
     display:flex;
+    width:90%;
+    margin: 0 auto;
     
 }
 
