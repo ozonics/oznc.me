@@ -1,0 +1,35 @@
+html{
+    margin: 1.5rem;
+}
+
+html,body{
+    font-family: 'Baron Neue', Helvetica, Arial, sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('fonts/BaronNeue-Regular.otf');
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('fonts/BaronNeue-Italic.otf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('fonts/BaronNeue-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Baron Neue;
+    src: url('fonts/BaronNeue-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
