@@ -1,2 +1,2 @@
-# ozonic.me
-personal website
+# oznc.me
+personal portfolio.
