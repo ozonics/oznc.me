@@ -77,13 +77,16 @@ nav{
 
 .projectContainer{
     display:block;
-    max-width:960px;
+    max-width:98%;
+    margin-top:3rem;
 }
 
 .projectDescription{
     display:block;
-    width:50%;
+    width:45%;
+    height:260px;
     float:left;
+    padding:20px 0 60px 0;
 }
 
 .projectDescription h2{
@@ -102,6 +105,14 @@ nav{
 .projectImage{
     float:right;
     width:50%;
+    padding-bottom:40px;
+}
+
+.projectImage img{
+    width:100%;
+    height: 300px; 
+object-fit: cover;
+object-position: 25% 25%; 
 }
 
 .projectDescription a{
