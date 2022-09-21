@@ -75,12 +75,18 @@ nav{
     font-size:20px;
 }
 
+.projectContainer{
+    display:block;
+    max-width:960px;
+}
+
 .projectDescription{
     display:block;
+    width:50%;
 }
 
 .projectDescription h2{
-    font-size:60px;
+    font-size:50px;
     font-weight:normal;
     text-decoration:none;
 }
@@ -94,8 +100,7 @@ nav{
 
 .projectImage{
     float:right;
-    width:500px;
-    height:400px;
+    width:50%;
 }
 
 .projectDescription a{
