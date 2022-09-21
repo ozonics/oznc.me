@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    src:url('/assets/fonts/LexendDeca-Regular.ttf') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    margin: 0;
+    height:100%;
+    background-color: rgb(234,234,234);
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+}
+
+html,body{
+    font-family: Lexend Deca, Helvetica, Arial, sans-serif;
+    color:black;
+}
+
+body{
+    margin:0 auto;
+    max-width:960px;
+}
