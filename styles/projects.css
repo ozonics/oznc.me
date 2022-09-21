@@ -83,6 +83,7 @@ nav{
 .projectDescription{
     display:block;
     width:50%;
+    float:left;
 }
 
 .projectDescription h2{
