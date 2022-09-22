@@ -8,8 +8,13 @@
         <link rel="stylesheet" href="styles/index.css">
         <title>Home</title>
         <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico">
+        <script>
+            $(window).load(function() {
+                $("body").removeClass("preload");
+            });
+        </script>
     </head>
-    <body>
+    <body class="preload">
         <nav>
             <div class="navIcon">
                 <a href="/">:P</a>

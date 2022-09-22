@@ -27,3 +27,7 @@ body{
     margin:0 auto;
     max-width:960px;
 }
+
+.preload * {
+    transition: none !important;
+}
