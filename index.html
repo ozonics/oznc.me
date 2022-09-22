@@ -8,13 +8,14 @@
         <link rel="stylesheet" href="styles/index.css">
         <title>Home</title>
         <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico">
-        <script>
-            $(window).load(function() {
-                $("body").removeClass("preload");
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded",function(){
+              let node = document.querySelector('.preload-transitions');
+              node.classList.remove('preload-transitions');
             });
         </script>
     </head>
-    <body class="preload">
+    <body class="preload-transitions">
         <nav>
             <div class="navIcon">
                 <a href="/">:P</a>
