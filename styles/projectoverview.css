@@ -59,13 +59,13 @@ nav{
     padding: 10% 0 5rem 0;
     text-align:left;
     display:block;
+    
 }
 
 .contentTitle h1{
     font-size:50px;
     font-weight:normal;
     text-decoration:none;
-    color:rgb(120,120,120);
     margin-bottom: 1rem;
 }
 
@@ -73,4 +73,41 @@ nav{
     font-weight: normal;
     text-decoration:none;
     font-size:20px;
+}
+
+.contentTitleImage{
+    float:left;
+    left:0;
+    top:79.5px;
+    height:319.9px;
+    width:100%;
+    position:absolute;
+    object-fit:cover;
+    z-index:-100;
+    opacity:0.4;
+}
+
+.contentOverview{
+    margin-top:1rem;
+}
+
+.contentOverview h3{
+    font-size:30px;
+    font-weight:normal;
+    text-decoration:none;
+    margin-bottom:0.5rem;
+}
+
+.contentOverview p{
+    text-decoration:none;
+    font-size:18px;
+}
+
+.contentOverview img{
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    display:block;
 }
