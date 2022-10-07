@@ -42,7 +42,7 @@ body{
 
 nav{
     display:block;
-    height:100vh;
+    height:100%;
     width:100px;
     background-color: rgb(234,234,234);
     /* background-color: red; */
@@ -87,11 +87,12 @@ nav{
     display:none;
 }
 
-/* .navSocials{
+.navSocials{
     text-align:center;
-    height:40vh;
     display:block;   
-    position:relative;
+    position:absolute;
+    bottom:2vh;
+    left:32px;
 }
 
 .navSocials ul{
@@ -106,6 +107,5 @@ nav{
 .navSocials a{
     display:block;
     text-align:center;
-    align-self: end;
-    position:absolute;
-} */
+    margin:1rem auto;
+}
