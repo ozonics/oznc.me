@@ -8,12 +8,8 @@
         <link rel="stylesheet" href="styles/index.css">
         <title>Jia / Student, Designer, and Professional Nerd</title>
         <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico">
-        <script type="text/javascript">
-            document.addEventListener("DOMContentLoaded",function(){
-              let node = document.querySelector('.preload-transitions');
-              node.classList.remove('preload-transitions');
-            });
-        </script>
+        <script src="scripts/preload.js"></script>
+        <script defer src="scripts/scrollfade.js"></script>
     </head>
     <body class="preload-transitions">
         <nav>
@@ -45,8 +41,8 @@
         </nav>
 
         <div class="mainContent">
-            <section class="contentBlock">
-                <div class="contentTitle">
+            <section class="contentBlock hidden">
+                <div class="contentTitle hidden">
                     <h3>Hello! I'm </h3>
                     <h2>Jia.</h2>
                     <!-- <p>I love design and enginnering</p>
@@ -54,39 +50,39 @@
                     
                 </div>
                 <div class="contentIcons">
-                    <object class="G1_1" data="assets/graphics/group1/cloud-drizzle.svg" width="180px" height="180px"></object>
-                    <object class="G1_2" data="assets/graphics/group1/edit.svg" width="180px" height="180px"></object>
-                    <object class="G1_3" data="assets/graphics/group1/music.svg" width="180px" height="180px"></object>
+                    <object class="G1_1 hidden" data="assets/graphics/group1/cloud-drizzle.svg" width="180px" height="180px"></object>
+                    <object class="G1_2 hidden" data="assets/graphics/group1/edit.svg" width="180px" height="180px"></object>
+                    <object class="G1_3 hidden" data="assets/graphics/group1/music.svg" width="180px" height="180px"></object>
                 </div>
-                <div class="contentImage">
+                <div class="contentImage hidden">
                     <img src="assets/images/vimal-s-bnhXhLFvbCA-unsplash.jpg">
                 </div>
             </section>
 
-            <section class="contentBlock">
-                <div class="contentTitle2">
+            <section class="contentBlock hidden">
+                <div class="contentTitle2 hidden">
                     <h3>I <span style="color:#D3442E;">love</span> design & engineering.</h3>
                 </div>
                 <div class="contentIcons">
-                    <object class="G2_1" data="assets/graphics/group2/file-text.svg" width="180px" height="180px"></object>
-                    <object class="G2_2" data="assets/graphics/group2/code.svg" width="180px" height="180px"></object>
-                    <object class="G2_3" data="assets/graphics/group2/box.svg" width="180px" height="180px"></object>
+                    <object class="G2_1 hidden" data="assets/graphics/group2/file-text.svg" width="180px" height="180px"></object>
+                    <object class="G2_2 hidden" data="assets/graphics/group2/code.svg" width="180px" height="180px"></object>
+                    <object class="G2_3 hidden" data="assets/graphics/group2/box.svg" width="180px" height="180px"></object>
                 </div>
-                <div class="contentImage">
+                <div class="contentImage hidden">
                     <img src="assets/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg">
                 </div>
             </section>
 
-            <section class="contentBlock">
-                <div class="contentTitle2">
+            <section class="contentBlock hidden">
+                <div class="contentTitle2 hidden">
                     <h3>Check out some cool projects <a href="projects" style="color:#4384CC; text-decoration:none;">here</a>.</h3>
                 </div>
                 <div class="contentIcons">
-                    <object class="G3_1" data="assets/graphics/group3/paperclip.svg" width="180px" height="180px"></object>
-                    <object class="G3_2" data="assets/graphics/group3/heart.svg" width="180px" height="180px"></object>
-                    <object class="G3_3" data="assets/graphics/group3/pie-chart.svg" width="180px" height="180px"></object>
+                    <object class="G3_1 hidden" data="assets/graphics/group3/paperclip.svg" width="180px" height="180px"></object>
+                    <object class="G3_2 hidden" data="assets/graphics/group3/heart.svg" width="180px" height="180px"></object>
+                    <object class="G3_3 hidden" data="assets/graphics/group3/pie-chart.svg" width="180px" height="180px"></object>
                 </div>
-                <div class="contentImage">
+                <div class="contentImage hidden">
                     <img src="assets/images/hunter-reilly-7Hx3RHJFuzo-unsplash.jpg">
                 </div>
             </section>

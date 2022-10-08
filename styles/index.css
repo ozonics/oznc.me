@@ -14,6 +14,7 @@ section{
     width:100%;
     height:100%;
     position: relative;
+    margin: 10px 0;
 }
 
 .contentBlock{
@@ -142,4 +143,23 @@ section{
     width:100%;
     object-fit:cover;
     float:right;
+}
+
+.hidden{
+    opacity:0;
+    filter: blur(1px);
+    /* transform: translateX(-100%); */
+    transition:all 0.5s;
+}
+
+.show{
+    opacity:1;
+    filter: blur(0);
+    /* transform: translateX(0); */
+}
+
+@media(prefers-reduced-motion) {
+    .hidden{
+        transition:none;
+    }
 }
