@@ -2,9 +2,10 @@ html,body{
     overflow: hidden;
 }
 
+html,* { cursor: none; }
+
 .mainContent{
     display:block;
-    margin-left:100px; 
     height:100vh;
     overflow: scroll;
     scroll-snap-type: y mandatory;
@@ -16,149 +17,182 @@ section{
     position: relative;
 }
 
-.contentBlock{
-    scroll-snap-align: start;
+section::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.about{
+    height:fit-content;
+}
+
+.skills{
+    height:fit-content;
+    margin: 30vh auto;
+}
+
+.contact{
+    height:fit-content;
+    margin: 30vh auto;
+}
+
+
+.contentSnap{
+    scroll-snap-align: center;
+}
+
+.scroll-text{
+    position:absolute;
+    opacity:0.15;
+    font-size:20rem;
+    top: 50%;
+    right: 0;
+    transform:translateY(-50%);
+    white-space: nowrap;
+    z-index: -1;
+    transition: all 0.5s;
+    font-weight: normal;
 }
 
 /* title */
 
 .contentTitle{
-    width:50%;
-    float:left;
+    display:block;
+    margin:auto;
     position: absolute;
+    left: 50%;
     top: 50%;
-    left:10%;
-    transform: translateY(-50%);
-    text-align:left;
+    transform: translate(-50%, -50%);
 }
 .contentTitle h3{
     font-weight: normal;
     text-decoration:none;
-    font-size:70px;
+    font-size:1.5em;
     margin-bottom:-2rem;
     display:block;
+    text-align: center;
 }
 
-.contentTitle h2{
-    font-weight: normal;
-    text-decoration:none;
-    font-size:150px;
+.contentTitle img{
+    height:35vh;
+    margin: 0 auto 1rem auto;
     display:block;
 }
 
-.contentTitle2{
-    width:28vw;
+.contentAbout{
+    display:block;
+    margin: 0 auto;
+    width:90%;
+}
+
+.contentAbout h3{
+    font-size: clamp(2.8rem, 2.18rem + 3.37vw, 4.5rem);
+    font-weight: normal;
+    margin: 3rem 0;
+}
+
+.contentAboutFacts{
+    display:block;
+    margin: 0 auto;
+    width:90%;
+}
+
+.contentAboutFacts::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.fact{
+    width:49%;
+    display:block;
     float:left;
-    position: absolute;
-    top: 50%;
-    left:10%;
-    transform: translateY(-80%);
-    text-align:left;
+    height:6.5rem;
 }
 
-.contentTitle2 h3{
-    font-weight: normal;
-    text-decoration:none;
-    font-size:50px;
-    margin-bottom:-2rem;
+.fact:nth-child(even){
+    float: right;
+}
+
+.fact h4{
+    font-size:1.4rem;
+    margin-bottom:0.5rem;
+}
+
+.fact p{
+    font-size:1.6rem;
+}
+
+.contentSkills{
     display:block;
+    margin: 10vh auto;
+    width:90%;
 }
 
-.contentIcons{
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:-1;
+.mobile-heading{
+    display:none;
+    font-size:2.2rem;
+    font-weight: normal;
 }
 
-/* group 1 */
-
-.G1_1{
-    position:absolute;
-    top:6vh;
-    left:3vw;
-}
-
-.G1_2{
-    position:absolute;
-    top:70vh;
-    left:15vw;
-}
-
-.G1_3{
-    position:absolute;
-    top:12vh;
-    left: 28vw;
-}
-
-/* group 2 */
-
-.G2_1{
-    position:absolute;
-    top:12vh;
-    left:3vw;
-}
-
-.G2_2{
-    position:absolute;
-    top:65vh;
-    left:8vw;
-}
-
-.G2_3{
-    position:absolute;
-    top:18vh;
-    left: 28vw;
-}
-
-/* group 3 */
-
-.G3_1{
-    position:absolute;
-    top:12vh;
-    left:3vw;
-}
-
-.G3_2{
-    position:absolute;
-    top:65vh;
-    left:8vw;
-}
-
-.G3_3{
-    position:absolute;
-    top:18vh;
-    left: 28vw;
-}
-
-.contentImage{
-    width:50%;
-    height:100%;
-    float:right;
-
-}
-.contentImage img{
-    height:100vh;
+.skillBlock{
     width:100%;
-    object-fit:cover;
+    display:block;
+    float:left;
+}
+
+.skill{
+    float:left;
+    font-size:1.8rem;
+    width:49%;
+    display:block;
+    height:6.5rem;
+    margin:5vh auto;
+}
+
+.skill:nth-child(1){
     float:right;
 }
 
-.hidden{
-    opacity:0;
-    filter: blur(1px);
-    /* transform: translateX(-100%); */
-    transition:all 0.5s;
+.contentContact{
+    display:block;
+    margin: 0 auto;
+    width:90%;
 }
 
-.show{
-    opacity:1;
-    filter: blur(0);
-    /* transform: translateX(0); */
+.contactLinks a{
+    display:inline-block;
+    padding: 1rem;
+    width:fit-content;
+    margin: 0 auto;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-@media(prefers-reduced-motion) {
-    .hidden{
-        transition:none;
+.contactLinks a:hover{
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+    .fact{
+        width:100%;
     }
+
+    .skill{
+        width:100%;
+    }
+
+    .skills{
+        margin: 10vh auto 5vh auto;
+    }
+
+
+    .scroll-text:nth-child(2){
+        display:none;
+    }
+
+    .mobile-heading{
+        display:block;
+    }
+
 }
