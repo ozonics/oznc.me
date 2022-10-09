@@ -80,11 +80,18 @@
         <link href="./pointer.css" rel="stylesheet">
         <script src="./pointer.js"></script>
         <script>
-            init_pointer({
-                pointerColor: "#000",
-                ringSize: 15,
-                ringClickSize: 10
-            })
+            function isMobile() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            }
+            
+            if (!isMobile()) {
+                init_pointer({
+                    pointerColor: "#000",
+                    ringSize: 15,
+                    ringClickSize: 10
+                })
+            }
+            
         </script>
     </body>
 </html>
