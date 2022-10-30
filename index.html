@@ -6,85 +6,80 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/default.css">
         <link rel="stylesheet" href="styles/index.css">
-        <title>jia / student, designer, and professional nerd</title>
+        <title>Jia / HS Student, Designer, Professional Nerd</title>
         <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico">
 
         <script src="scripts/preload.js"></script>
         <script defer src="scripts/scrollfade.js"></script>
 
     </head>
-    <body class="preload-transitions mainContent">
-        
-        <!-- hero -->
-
-        <section class="contentSnap">
-            <div class="contentTitle hidden">
-                <img src="assets/images/signature.png" class="hidden">
-                <h3 class="hidden">student · digital designer · robotics enthusiast</h3>
-                    
-            </div>
-        </section>
-
-        <!-- about me -->
-
-        <section class="about">
-            <div class="contentAbout">
-                <h2 class="scroll-text">about me</h2>
-                <h3 class="contentSnap hidden">hello there stranger!<br> my name is jia.</h3>
-                <h3 class="contentSnap hidden">i'm an amateur digital designer.</h3>
-                <h3 class="contentSnap hidden">i design and create projects with skill and a strong passion.</h3>
-                
-            </div>
-            <div class="contentAboutFacts hidden contentSnap">
-                <div class="fact"> <h4>age & gender:</h4> <p>15 yrs old (he/him)</p> </div>
-                <div class="fact "> <h4>currently:</h4> <p>g10 myp student at bcis</p> </div>
-                <div class="fact"> <h4>previously:</h4> <p>n/a</p> </div>
-                <div class="fact contentSnap"> <h4>favorite word:</h4> <p>interesting</p> </div>
-                <div class="fact"> <h4>current favorite video game:</h4> <p>eastward</p> </div>
-                <div class="fact "> <h4>current favorite movie:</h4> <p>top gun: maverick (2022)</p> </div>
-                <div class="fact"> <h4>current favorite song:</h4> <p>tears on my piano (explicit)</p> </div>
-            </div>
-        </section>
-
-        <section class="skills">
-            <div class="contentSkills">
-                <div class="skillBlock"></div>
-                <h2 class="scroll-text">skills</h2>
-                <h3 class="mobile-heading">my skills</h3>
-                <p class="skill contentSnap hidden">
-                    affinity designer<br>
-                    fusion360<br>
-                    easyeda<br>
-                    blender
-                </p>
-                <p class="skill hidden">
-                    html css js<br>
-                    c++ c<br>
-                </p>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="contentContact">
-                <div class="contactLinks contentSnap">
-                    <div class="skillBlock"></div>
-                    <h2 class="scroll-text">contact</h2>
-                    <h3 class="mobile-heading">my contacts</h3>
-                    <a href="mailto:jiaronghu8@gmail.com"><img src="assets/graphics/mail.svg" width="120px" height="120px"></a>
-                    <a href="https://discordid.netlify.app/?id=740389686174023741"><img src="assets/graphics/discord-logo.svg" width="120px" height="120px"></a>
-                    <a href="https://instagram.com"><img src="assets/graphics/instagram.svg" width="120px" height="120px"></a>
-                    <a href="https://twitter.com/upintheozone"><img src="assets/graphics/twitter.svg" width="120px" height="120px"></a>
+    <body id="main" class="preload-transitions main">
+        <svg id="fader"></svg>
+        <script>
+            fadeInPage();
+            function fadeInPage() {
+                if (!window.AnimationEvent) { return; }
+                var fader = document.getElementById('fader');
+                fader.classList.add('fade-out');
+            }
+        </script>
+        <div class="content">
+            <div class="top-left">
+                <div class="hero-content">
+                    <svg width="100%" height="25vh" viewBox="0 0 420 405" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                        <g transform="matrix(1.09785,0,0,1.09785,-332.998,-187.185)">
+                            <path class="signature-animation" d="M435.292,346.524C338.362,348.801 306.646,307.955 313.267,265.506C318.11,234.457 359.732,168.747 435.292,181.148C482.606,188.913 488.489,241.352 467.675,302.698C451.88,349.25 451.338,352.304 430.445,396.469C415.176,428.744 403.339,454.087 381.994,482.764C313.732,574.472 307.07,503.166 338.667,460.717C359.068,433.309 371.592,422.865 395.343,402.325C408.6,390.86 442.679,362.397 455.279,353.241C489.651,328.263 538.563,285.832 537.564,286.832C532.295,292.105 484.246,329.283 496.93,340.653C510.974,353.241 573.41,307.76 579.024,302.698C593.164,289.951 607.035,284.027 617.713,280.858C648.686,271.667 632.657,292.881 632.664,292.87C645.241,273.914 626.164,278.297 617.713,280.858C568.678,295.721 539.495,347.901 565.682,347.901C585.871,347.901 626.002,305.259 622.79,308.303C575.36,353.241 630.672,353.241 676.774,314.34" style="fill:none;stroke:white;stroke-width:10.93px;"/>
+                        </g>
+                    </svg>
+                    <h3 class="fade-in-slow"><br>high school student<br>
+                        environmentalist<br>
+                        amateur digital designer<br>
+                        robotics enthusiast<br>
+                        electronics nerd
+                    </h3>
                 </div>
             </div>
-        </section>
-        <link href="./pointer.css" rel="stylesheet">
-        <script src="./pointer.js"></script>
-        <script>
-            init_pointer({
-                pointerColor: "#000",
-                ringSize: 15,
-                ringClickSize: 10
-            })
-        </script>
+
+            <div class="top-right fade-in-slow">
+                <div class="top-right-block links">
+                    <h3>links</h3><br>
+                    <a href="projects/hydroponics">hydroponics project</a><br>
+                    <a href="https://www.acamis.org/student-activities/jim-koerschen-award">acamis koerschen award</a>
+                    <a href="photodump">photo dump</a>
+                </div>
+                <div class="top-right-block skills">
+                    <h3>skills</h3><br>
+                    <p>2d graphic design<br>
+                        cad design and modelling<br>
+                        front end web dev<br>
+                        pcb & circuit creation
+                    </p>
+                </div>
+                <div class="top-right-block about-me">
+                    <h3>about me</h3><br>
+                    <p>g10 myp student @ bcis<br><br>
+                        beijing, china<br><br>
+                        current favorites:<br>
+                        <a href="https://www.imdb.com/title/tt1745960/">top gun: maverick (2022)</a><br>
+                        <a href="https://open.spotify.com/album/151w1FgRZfnKZA9FEcg9Z3?si=XBRLoxdoSWauD8TLwnWeBQ">midnights (3am edition)</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bottom-left fade-in-slow">
+                <p><a href="https://github.com/ozonics/oznc.me/">v5.0</a><br>
+                    ©2022<br>
+                    designed by jia
+                </p>
+            </div>
+
+            <div class="bottom-right fade-in-slow">
+                <a href="mailto:jiaronghu8@gmail.com"><img src="assets/graphics/mail.svg" width="40px" height="40px"></a>
+                <a href="https://discordid.netlify.app/?id=740389686174023741"><img src="assets/graphics/discord-logo.svg" width="40px" height="40px"></a>
+                <a href="https://www.instagram.com/upintheozonee/"><img src="assets/graphics/instagram-logo.svg" width="40px" height="40px"></a>
+                <a href="https://www.twitter.com/upintheozone"><img src="assets/graphics/twitter-logo.svg" width="40px" height="40px"></a>
+            </div>
+        </div>
+
     </body>
 </html>
