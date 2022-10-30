@@ -9,12 +9,8 @@ html,body{
 }
   
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 #fader {
@@ -59,15 +55,9 @@ body {
 }
 
 @keyframes fadeBackground {
-	0% {
-		background-position: 0% 0%;
-	}
-	50% {
-		background-position: 100% 100%;
-	}
-	100% {
-		background-position: 0% 0%;
-	}
+	0% { background-position: 0% 0%; }
+	50% { background-position: 100% 100%; }
+	100% { background-position: 0% 0%; }
 }
 
 .main{
@@ -105,9 +95,7 @@ body {
 }
 
 @keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
+    to { stroke-dashoffset: 0; }
 }
 
 .top-right{
@@ -240,5 +228,9 @@ a:hover{
     }
     .mobile-selector button:nth-child(3){
         width:40%;
+    }
+
+    .fade-in-slow{
+        animation: fadeInAnimation ease 1s;
     }
 }
