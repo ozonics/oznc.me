@@ -10,7 +10,7 @@
         <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico">
 
         <script src="scripts/preload.js"></script>
-        <script defer src="scripts/scrollfade.js"></script>
+        <script src="scripts/togglecatagory.js"></script>
 
     </head>
     <body id="main" class="preload-transitions main">
@@ -24,7 +24,7 @@
             }
         </script>
         <div class="content">
-            <div class="top-left">
+            <div id="top-left" class="top-left">
                 <div class="hero-content">
                     <svg width="100%" height="25vh" viewBox="0 0 420 405" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
                         <g transform="matrix(1.09785,0,0,1.09785,-332.998,-187.185)">
@@ -40,14 +40,14 @@
                 </div>
             </div>
 
-            <div class="top-right fade-in-slow">
-                <div class="top-right-block links">
+            <div id="top-right" class="top-right fade-in-slow">
+                <div id="top-right-links" class="top-right-block links">
                     <h3>links</h3><br>
-                    <a href="projects/hydroponics">hydroponics project</a><br>
+                    <a href="projects/hydroponics">hydroponics project</a>
                     <a href="https://www.acamis.org/student-activities/jim-koerschen-award">acamis koerschen award</a>
                     <a href="photodump">photo dump</a>
                 </div>
-                <div class="top-right-block skills">
+                <div id="top-right-skills" class="top-right-block skills">
                     <h3>skills</h3><br>
                     <p>2d graphic design<br>
                         cad design and modelling<br>
@@ -55,12 +55,12 @@
                         pcb & circuit creation
                     </p>
                 </div>
-                <div class="top-right-block about-me">
+                <div id="top-right-about" class="top-right-block about-me">
                     <h3>about me</h3><br>
                     <p>g10 myp student @ bcis<br><br>
                         beijing, china<br><br>
                         current favorites:<br>
-                        <a href="https://www.imdb.com/title/tt1745960/">top gun: maverick (2022)</a><br>
+                        <a href="https://www.imdb.com/title/tt1745960/">top gun: maverick (2022)</a>
                         <a href="https://open.spotify.com/album/151w1FgRZfnKZA9FEcg9Z3?si=XBRLoxdoSWauD8TLwnWeBQ">midnights (3am edition)</a>
                     </p>
                 </div>
@@ -78,6 +78,10 @@
                 <a href="https://discordid.netlify.app/?id=740389686174023741"><img src="assets/graphics/discord-logo.svg" width="40px" height="40px"></a>
                 <a href="https://www.instagram.com/upintheozonee/"><img src="assets/graphics/instagram-logo.svg" width="40px" height="40px"></a>
                 <a href="https://www.twitter.com/upintheozone"><img src="assets/graphics/twitter-logo.svg" width="40px" height="40px"></a>
+            </div>
+
+            <div class="mobile-selector fade-in-slow">
+                <button onclick="showLinks()">links</button><button onclick="showSkills()">skills</button><button onclick="showAbout()">about me</button>
             </div>
         </div>
 
