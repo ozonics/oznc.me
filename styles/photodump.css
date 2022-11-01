@@ -108,7 +108,7 @@ a:hover{
 .main-images{
     display:grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: repeat(10000, 55vh);
+    grid-template-rows: repeat(5, 55vh);
     width:100%;
 }
 
@@ -129,7 +129,7 @@ a:hover{
 
     .main-images{
         grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(10000, 60vh);
+        grid-template-rows: repeat(8, 60vh);
     }
 
     .fade-in-slow{
@@ -141,6 +141,6 @@ a:hover{
 
     .main-images{
         grid-template-columns: 100%;
-        grid-template-rows: repeat(10000, 70vh);
+        grid-template-rows: repeat(15, 70vh);
     }
 }
