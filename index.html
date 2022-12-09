@@ -13,84 +13,147 @@
         <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico">
 
         <script src="scripts/preload.js"></script>
-        <script src="scripts/togglecatagory.js"></script>
 
     </head>
     <body id="main" class="preload-transitions main">
-        <svg id="fader"></svg>
-        <script>
-            fadeInPage();
-            function fadeInPage() {
-                if (!window.AnimationEvent) { return; }
-                var fader = document.getElementById('fader');
-                fader.classList.add('fade-out');
-            }
-        </script>
-        <div class="content">
-            <div id="top-left" class="top-left">
-                <div class="hero-content">
-                    <svg width="100%" height="25vh" viewBox="0 0 420 405" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-                        <g transform="matrix(1.09785,0,0,1.09785,-332.998,-187.185)">
-                            <path class="signature-animation" d="M435.292,346.524C338.362,348.801 306.646,307.955 313.267,265.506C318.11,234.457 359.732,168.747 435.292,181.148C482.606,188.913 488.489,241.352 467.675,302.698C451.88,349.25 451.338,352.304 430.445,396.469C415.176,428.744 403.339,454.087 381.994,482.764C313.732,574.472 307.07,503.166 338.667,460.717C359.068,433.309 371.592,422.865 395.343,402.325C408.6,390.86 442.679,362.397 455.279,353.241C489.651,328.263 538.563,285.832 537.564,286.832C532.295,292.105 484.246,329.283 496.93,340.653C510.974,353.241 573.41,307.76 579.024,302.698C593.164,289.951 607.035,284.027 617.713,280.858C648.686,271.667 632.657,292.881 632.664,292.87C645.241,273.914 626.164,278.297 617.713,280.858C568.678,295.721 539.495,347.901 565.682,347.901C585.871,347.901 626.002,305.259 622.79,308.303C575.36,353.241 630.672,353.241 676.774,314.34" style="fill:none;stroke:white;stroke-width:10.93px;"/>
-                        </g>
-                    </svg>
-                    <h3 class="fade-in-slow"><br>high school student<br>
-                        environmentalist<br>
-                        amateur digital designer<br>
-                        robotics enthusiast<br>
-                        electronics nerd
-                    </h3>
+        <div class="hero-gradient-1"></div>
+        <div class="hero-gradient-2"></div>
+        <div class="navigation-bar">
+            <div class="nav-bar-flex">
+                <div class="nav-bar-left">
+                    <a>Jia.</a>
                 </div>
-            </div>
-
-            <div id="top-right" class="top-right">
-                <div id="top-right-links" class="top-right-block links fade-in-slow">
-                    <h3>links</h3><br>
-                    <a href="projects/hydroponics">hydroponics project</a>
-                    <a href="https://www.acamis.org/student-activities/jim-koerschen-award">acamis koerschen award</a>
-                    <a href="photodump">photo dump</a>
+                <div class="nav-bar-filler">
                 </div>
-                <div id="top-right-skills" class="top-right-block skills fade-in-slow">
-                    <h3>skills</h3><br>
-                    <p>2d graphic design<br>
-                        cad design and modelling<br>
-                        front end web dev<br>
-                        pcb & circuit creation
-                    </p>
+                <div class="nav-bar-right">
+                    <a href="#intro-scroll">Overview</a>
+                    <a href="#about-content">About</a>
+                    <a class="contact-button" href="#contact-content"><p>Contact</p></a>
                 </div>
-                <div id="top-right-about" class="top-right-block about-me fade-in-slow">
-                    <h3>about me</h3><br>
-                    <p>15 yrs old (9.12 bd)<br>
-                        he, him<br>
-                        g10 myp student @ bcis<br><br>
-                        beijing, china<br><br>
-                        current favorites:<br>
-                        <a href="https://eastwardgame.com/">eastward (video game)</a>
-                        <a href="https://www.imdb.com/title/tt1745960/">top gun: maverick (movie)</a>
-                        <a href="https://open.spotify.com/album/151w1FgRZfnKZA9FEcg9Z3?si=XBRLoxdoSWauD8TLwnWeBQ">midnights (album)</a>
-                        <a href="https://open.spotify.com/track/1V3XjDgDAtpsEmiTkterlH">feelings (single)</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="bottom-left fade-in-slow">
-                <p><a href="https://github.com/ozonics/oznc.me/">v5.0</a>
-                    ©2022<br>
-                    designed by jia
-                </p>
-            </div>
-
-            <div class="bottom-right fade-in-slow">
-                <a href="mailto:jiaronghu8@gmail.com"><img src="assets/graphics/mail.svg" width="40px" height="40px"></a>
-                <a href="https://discordid.netlify.app/?id=740389686174023741"><img src="assets/graphics/discord-logo.svg" width="40px" height="40px"></a>
-                <a href="https://www.instagram.com/upintheozonee/"><img src="assets/graphics/instagram-logo.svg" width="40px" height="40px"></a>
-                <a href="https://www.twitter.com/upintheozone"><img src="assets/graphics/twitter-logo.svg" width="40px" height="40px"></a>
-            </div>
-
-            <div class="mobile-selector fade-in-slow">
-                <button onclick="showLinks()">links</button><button onclick="showSkills()">skills</button><button onclick="showAbout()">about me</button>
             </div>
         </div>
+        <div class="content">
+            <div class="hero-content" id="hero-content">
+                <div class="hero-center">
+                    <svg width="100%" height="100%" viewBox="0 0 1080 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                        <g transform="matrix(1.24965,0,0,1.24965,-659.079,-425.634)">
+                            <path class="signature-animation" d="M580.042,645.159C599.668,633.738 635.164,610.4 662.735,583.979C715.129,533.769 760.25,435.292 716.431,423.946C670.384,412.023 678.261,520.39 652.973,656.769C661.841,615.719 671.047,537.56 722.96,543.937C778.55,550.765 695.579,659.346 782.699,654.537C803.999,653.361 829.058,641.587 834.605,637.69C960.766,549.047 827.039,498.667 816.518,583.531C811.467,624.267 835.164,661.294 897.271,651.533C989.758,636.996 1058.22,440.19 1011.92,425.729C977.862,415.091 938.215,531.983 957.347,624.067C963.854,655.385 1016.41,675.364 1056.69,637.942C1143.23,557.541 1170.84,429.692 1127.68,427.224C1088.27,424.971 1057.84,537.656 1074.72,613.087C1080.54,639.095 1138.33,708.761 1195.24,591.73C1197.2,587.687 1212.78,544.55 1239.31,541.033C1275.85,536.191 1305.39,565.021 1286.83,614.941C1274.44,648.255 1237.78,671.015 1210.67,649.833C1171.08,618.912 1212.06,507.27 1278.22,550.837C1302.38,566.75 1328.16,544.332 1339.02,533.864" style="fill:none;stroke:rgb(233,233,233);stroke-width:16px;"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="intro-bottom" id="intro-scroll">
+                <a class="frost-button" href="#intro-scroll" >
+                    <p>Scroll</p> 
+                    <img width="26px" height="26px" src="assets/graphics/arrows/arrow-down.svg">
+                </a>
+            </div>
+            <div class="intro-content" id="intro-content">
+                <div class="intro-center">
+                    <h1>Hello! I'm Jia.</h1>
+                    <h3>A HS Student at BCIS.</h3>
+                    <div class="intro-center-filler"></div>
+                </div>
+                
+            </div>
+            
+            <div class="latest-content" id="latest-content">
+                <div class="latest-center">
+                    <h3>Latest Project</h3>
+                    <h1>Hydroponics STEM Kit</h1><br>
+                    <p class="latest-content-description">Education Kit made to teach students about the biotechnology of Hydroponics. A learning experience on STEM, design, and communication towards a younger audience.</p><br>
+                    <a class="frost-button">
+                        <p>Case Study</p> 
+                        <img width="26px" height="26px" src="assets/graphics/arrows/arrow-up-right.svg">
+                    </a>
+                </div>
+            </div>
+
+            <div class="interests-content" id="interests-content">
+                <div class="interests-center">
+                    <h3 class="interests-color-1">Some of what I'm interested in.</h3>
+                    <h3 class="interests-color-2">Graphic & Digital Design.</h3>
+                    <h3 class="interests-color-3">Robotics & Electronics.</h3>
+                    <h3 class="interests-color-4">and I care about the environment.</h3>
+                </div>
+            </div>
+
+            <div class="about-content" id="about-content">
+                <div class="about-center">
+                    <h2>A bit more about me.</h2><br>
+                    <div class="about-content-grid">
+                        <div class="about-text">
+                            <p><span class="highlight-text">Hello there! My name is Jia Rong Hu.</span> I'm an international school student in Beijing, China as a high school sophomore.</p>
+                            <p>I'm fluent in both English & Chinese, and currently learning Español as a third language in school. ¡Hola! ¿Como estas?</p>
+                            <p>I love working with groups of people, both as a learner and as a leader. I work well with anyone, and I'm always open to suggestions.</p>
+                        </div>
+                        <div class="about-stat about-pronoun"> <p>Pronoun</p> <h3>He/Him</h3> </div>
+                        <div class="about-stat about-age"> <p>Age</p> <h3>Fifteen</h3> </div>
+                        <div class="about-stat about-fav-song"> <p>Favorite Song</p> <h3>Forever Winter</h3> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-content" id="skills-content">
+                <div class="skills-center">
+                    <h2>So, what can I do?</h2><br>
+                    <div class="skills-content-grid">
+                        <div class="skills-text">
+                            <p><span class="highlight-text">Quite a bit.</span> I'm fluent with a lot of digital software and I learn new applications quick. </p>
+                            <p>Here are some skills that I've developed as interests. I'm able to work with any of these on a project on demand.</p>
+                        </div>
+                        <div class="skills-stat"> <h3>Front End Web Development</h3> <p>HTML, CSS, JS</p> </div>
+                        <div class="skills-stat"> <h3>Graphic Design</h3> <p>Affinity Design Suite</p> </div>
+                        <div class="skills-stat"> <h3>CAD Design</h3> <p>Fusion 360, Blender, EasyEDA</p> </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-content" id="contact-content">
+                <div class="contact-center">
+                    <h2>Got an idea? Find me below.</h2><br>
+                    <div class="contact-content-grid">
+                        <a href="mailto:jiaronghu8@gmail.com"><img width="64px" height="64px" src="/assets/graphics/mail.svg"></a>
+                        <a href="https://discordid.netlify.app/?id=740389686174023741"><img width="64px" height="64px" src="/assets/graphics/discord.svg"></a>
+                        <a href="https://www.instagram.com/upintheozonee/"><img width="64px" height="64px" src="/assets/graphics/instagram.svg"></a>
+                        <a href="https://www.twitter.com/upintheozone"><img width="64px" height="64px" src="/assets/graphics/twitter.svg"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Jia.</h3>
+                    <p>HS Student.</p>
+                    <p>Website v7.0 (idea 3)</p>
+                </div>
+                <div class="footer-site">
+                    <h3>Sections</h3>
+                    <ul>
+                        <li><a href="#hero-content">Hero</a></li>
+                        <li><a href="#intro-content">Intro</a></li>
+                        <li><a href="#latest-content">Latest Project</a></li>
+                        <li><a href="#interests-content">Interests</a></li>
+                        <li><a href="#about-content">About Me</a></li>
+                        <li><a href="#skills-content">Skills</a></li>
+                        <li><a href="#contacts-content">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Socials</h3>
+                    <ul>
+                        <li><a href="mailto:jiaronghu8@gmail.com">Email</a></li>
+                        <li><a href="https://discordid.netlify.app/?id=740389686174023741">Discord</a></li>
+                        <li><a href="https://www.instagram.com/upintheozonee/">Instagram</a></li>
+                        <li><a href="https://www.twitter.com/upintheozone">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
     </body>
 </html>
