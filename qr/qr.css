@@ -1,7 +1,21 @@
 @font-face {
-    font-family: "ZCOOLXiaoWei";
-    src: url("ZCOOLXiaoWei-Regular.ttf");
-    font-weight:normal;
+    font-family: "Inter_Google";
+    src: url("../assets/fonts/Inter-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter_Google";
+    src: url("../assets/fonts/Inter-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter_Google";
+    src: url("../assets/fonts/Inter-SemiBold.ttf");
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -15,11 +29,10 @@ html{
     height:100%;
     width:100%;
     background-color:black; 
-    color:black;
 }
 
 html,body{
-    font-family: ZCOOLXiaoWei, serif;
+    font-family: Inter_Google, Arial, Helvetica, sans-serif;
     color:white;
     font-weight:normal !important;
 }
