@@ -11,7 +11,8 @@ html{
     top:0;
     z-index:101;
     backdrop-filter: blur(10px);
-    border-bottom: 0.5px solid rgba(255,255,255,0.1);
+    background-color: rgba(0,0,0,0.3);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-bar-flex{
@@ -158,18 +159,12 @@ html{
     padding:4.5px 20px 4.5px 0;
 }
 
-.intro-wrapper{
-    height:250vh;
-}
-
 .intro-content{
     width:100%;
-    height:100vh;
+    height:50vh;
     display:flex;
     align-items:center;
     justify-content: center;
-    position:sticky;
-    top:0;
 }
 
 .intro-center h1{
@@ -177,17 +172,17 @@ html{
     font-weight:600;
     text-align:left;
     line-height: 90%;
-    /* background: linear-gradient(to right, #BE23ff, #F026B2, #FF981F);
+    background: linear-gradient(to right, #BE23ff, #F026B2, #FF981F);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; */
-    color:black;
+    -webkit-background-clip: text;
+    /* color:white; */
 }
 
 .intro-center h3{
     font-size: clamp(30px, 50px, 7vw);
     font-weight:600;
     text-align:left;
-    color:black;
+    color:white;
 }
 
 .intro-center-filler{
@@ -196,19 +191,7 @@ html{
     content:"";
 }
 
-.intro-background{
-    position:absolute;
-    top:160%;
-    left:0;
-    width:100%;
-    height:140%;
-    z-index:-1;
-    background-image: url("/assets/images/background.png");
-    background-size: 100% 100%;
-}
-
 .latest-content{
-    margin-top:-35vh;
     width:100%;
     height:100vh;
     display:flex;
